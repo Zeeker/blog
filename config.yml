@@ -75,66 +75,71 @@ params:
 
 menu:
   main:
-    - weight: -150
+    - weight: 100
       identifier: home
       name: Home
       pre: <i class="sidebar-button-icon fa fa-lg fa-home"></i>
       url: /
-    - weight: -140
+    - weight: 200
       identifier: categories
       name: Categories
       pre: <i class="sidebar-button-icon fa fa-lg fa-bookmark"></i>
       url: /categories
-    - weight: -130
+    - weight: 300
       identifier: tags
       name: Tags
       pre: <i class="sidebar-button-icon fa fa-lg fa-tags"></i>
       url: /tags
-    - weight: -120
-      identifier: imprint
-      name: Imprint
-      pre: <i class="sidebar-button-icon fa fa-lg fa-address-card"></i>
-      url: /imprint
-    # - weight: -120
+    # - weight: 400
+    #   identifier: imprint
+    #   name: Imprint
+    #   pre: <i class="sidebar-button-icon fa fa-lg fa-address-card"></i>
+    #   url: /imprint
+    # - weight: 500
     #   identifier: archives
     #   name: Archives
     #   pre: <i class="sidebar-button-icon fa fa-lg fa-archive"></i>
     #   url: /archives
-    - weight: -110
-      identifier: about
-      name: About
-      pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
-      url: '/#about'
+    # - weight: 600
+    #   identifier: about
+    #   name: About
+    #   pre: <i class="sidebar-button-icon fa fa-lg fa-question"></i>
+    #   url: '/#about'
 
   links:
-    - weight: -150
+    - weight: 1
       identifier: stackoverflow
       name: StackOverflow
       pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
       url: 'https://stackoverflow.com/users/story/2274224'
-    - weight: -140
+    - weight: 100
       identifier: github
       name: Github
       pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
       url: 'https://github.com/zeeker/'
-    - weight: -130
+    - weight: 200
       identifier: twitter
       name: Twitter
       pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
       url: 'https://twitter.com/ZeekerDev/'
-    - weight: -120
+    - weight: 300
       identifier: linkedin
       name: LinkedIn
       pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
       url: 'https://www.linkedin.com/in/swolfdev/'
-    - weight: -110
+    - weight: 400
       identifier: xing
       name: Xing
       pre: <i class="sidebar-button-icon fa fa-lg fa-xing"></i>
       url: 'https://www.xing.com/profile/Sascha_Wolf45'
 
   misc:
-    - weight: -100
+    - weight: 100
+      identifier: me
+      name: Me
+      pre: <i class="sidebar-button-icon fa fa-lg fa-user"></i>
+      url: 'https://saschawolf.me/'
+    - weight: 200
       identifier: rss
       name: RSS
       pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
