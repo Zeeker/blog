@@ -1,5 +1,6 @@
 {
     "alias": "blog.saschawolf.me",
     "name": "blog",
-    "type": "static"
+    "type": "static",
+    "version": 1
 }
