@@ -14,7 +14,7 @@ tags:
 keywords:
 - tech
 autoThumbnailImage: false
-coverImage: /images/posts/how-to-build/cover.jpg
+coverImage: cover.jpg
 coverCaption: Photo by Christopher Gower on Unsplash
 # coverSize: partial
 # metaAlignment: center
