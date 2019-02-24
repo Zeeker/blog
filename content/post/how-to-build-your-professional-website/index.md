@@ -102,7 +102,13 @@ Hugo offers a number of themes, most of them contributed by the community.
 In this tutorial I'll go with the [tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/) simply because it's the one you're looking at right now.
 Feel free to look through [the other ones hugo is offering](https://themes.gohugo.io/).
 
-![The tranquilpeak theme](/images/posts/how-to-build/tranquilpeak.png)
+{{<
+  figure
+    caption="The Tranquilpeak Theme"
+    src="tranquilpeak.png"
+    link="https://themes.gohugo.io/hugo-tranquilpeak-theme/"
+    target="_blank"
+>}}
 
 # Is it hard?
 
