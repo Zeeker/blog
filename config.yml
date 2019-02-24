@@ -17,8 +17,10 @@ permalinks:
 
 author:
   name: Sascha Wolf
-  bio: I solve problems
-  job: TSA / Full Stack Dev
+  bio: |-
+    <b>I solve problems</b><br/>
+    \#Compassion \#DDD \#Tech
+  job: Full Stack Dev / TSA
   location: 'Cologne, Germany'
   gravatarEmail: swolf.dev@gmail.com
   twitter: wolf4earth
