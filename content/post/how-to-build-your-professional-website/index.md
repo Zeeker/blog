@@ -62,6 +62,7 @@ In this post you will learn how to:
 At the end of this you'll have all the skills necessary to create a website **just like this one**.
 
 *Note: This post assumes you have some basic knowledge about the command line and git.*
+*If you are not familiar with git - or don't feel comfortable using it - [take a look at it's website](https://git-scm.com/).*
 
 # Create your page using [hugo][hugo]
 
@@ -72,7 +73,7 @@ In this section we will pretty much follow along [hugo's quickstart](https://goh
 So if you would rather read that, go ahead.
 No hard feelings.
 
-So, assuming you're on macOS installing hugo is as simple as typing into your CLI:
+Assuming you're on macOS installing hugo is as simple as typing into your CLI (you'll need to have [brew](https://brew.sh/) installed):
 
 ```sh
 brew install hugo
@@ -84,11 +85,11 @@ brew install hugo
 After that you can create your future site by typing:
 
 ```sh
-hugo new site my-great-future-site
+hugo new site awesome-future-site
 ```
 
-<!-- This will create a folder called (you might have guessed it) `my-great-future-site`. -->
-This will create a folder called - you might have guessed it - `my-great-future-site`.
+<!-- This will create a folder called (you might have guessed it) `awesome-future-site`. -->
+This will create a folder named - you might have guessed it - `awesome-future-site`.
 <!-- You could now use `hugo server` to see how it looks, but **spoiler** that would be pretty boring. -->
 You could now use `hugo server` to see how it looks, but (**spoiler**) it's pretty boring.
 By default hugo generates an empty page with nothing in it.
@@ -110,9 +111,41 @@ Feel free to look through [the other ones hugo is offering](https://themes.gohug
     target="_blank"
 >}}
 
+To install a theme you'll need to download it into the `themes` folder of your `awesome-future-site`.
+How do you do that?
+Going by hugo's quickstart you should use `git` - this is also what I would suggest.
+
+```sh
+cd awesome-future-site
+
+git init
+git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/tranquilpeak
+```
+
+In case the `git submodule` part doesn't make sense to you: it's basically a way of telling get to keep track of a "sub project".
+Don't worry too much about it.
+If you want to worry you can read more about it [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+
+Okay, now we have the theme downloaded but how do we use it?
+Great question!
+
+```sh
+echo 'theme = "tranquilpeak"' >> config.toml
+```
+
+This appends the line `theme = "tranquilpeak"` to your `config.toml` file.
+Alternatively you can just open it with your favorite editor and add it this way.
+
+Now, let's look at your page again, shall we?
+
+![Your new page](page-with-theme.png)
+
+Meh, still rather boring but we're getting there!
+
 # Is it hard?
 
 # Alternatives?
+
 
 
 [hugo]: https://gohugo.io/
