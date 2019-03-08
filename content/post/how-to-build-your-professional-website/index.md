@@ -138,7 +138,7 @@ Alternatively you can just open it with your favorite editor and add it this way
 
 Let's look at your page again, shall we?
 Reminder: use `hugo server` to render the page.
-  
+
 {{<
   image
     classes="fancybox"
@@ -175,6 +175,74 @@ I'll wait here for you.
 Also checkout [tranquilpeak's user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to see which configuration does what.
 Alternatively you can look at [my configuration on github](https://github.com/Zeeker/blog/blob/post/how-to-build-your-professional-website/config.yml).
 
+## Content, content, content
+
+Now that we have the basic scaffolding for your page it's time to start writing.
+With hugo this is done in [markdown][markdown].
+If you're unfamiliar with markdown I would suggest to google for a tutorial, it's really simple and great to use.
+
+With that out of the way, lets create your first post!
+Open your command line again and type:
+
+```sh
+hugo new post/my-first-post.md
+```
+
+This will create a file at `content/post/my-first-post.md` which should roughly look like this:
+
+```markdown
+---
+title: "My First Post"
+date: 2019-03-08T23:45:06+01:00
+categories:
+- category
+- subcategory
+tags:
+- tag1
+- tag2
+keywords:
+- tech
+comments:       false
+showMeta:       false
+showActions:    false
+#thumbnailImage: //example.com/image.jpg
+---
+
+
+```
+
+You can now start typing away merrily and check your progress with `hugo server`.
+To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md)
+
+Also you might want to take a peek into the [relevant section in the tranquilpeak docs](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts), which explains all the configuration seen above.
+
+We could continue to talk about all the features of hugo but that would blow this post out of proportion.
+There are more interesting things to come.
+
+## And now?
+
+<!-- Before we go on to the next section (hosting) let's quickly recap what we learned. -->
+Let's recap.
+We've learned how to create a basic page with hugo and how to write simple posts with it.
+<!-- REPHRASE -->
+But up until now everything was just locally.
+
+The real question is: How do we get this on the web?
+Enter "now".
+
+# Hosting made simple: now by zeit
+
+[now][now] is a deployment and hosting service by the fine folks at zeit.
+It's mainly target at serverless applications but can just as easily be used for website hosting.
+
+This section will teach you two things:
+
+1. how to use `now` to immediately put your page onto the web
+2. how to build your page with `now`
+
+Step 2 will then allow us to automate the whole process, so you just need to push your changes to github.
+But no worries, I'll explain everything along the way!
+
 # Is it hard?
 
 # Alternatives?
@@ -184,3 +252,5 @@ Alternatively you can look at [my configuration on github](https://github.com/Ze
 [hugo]: https://gohugo.io/
 [now]: https://zeit.co/now
 [github]: http://github.com/
+[markdown]: https://daringfireball.net/projects/markdown/
+[now]: https://zeit.co/now
