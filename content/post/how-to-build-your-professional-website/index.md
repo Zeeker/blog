@@ -119,7 +119,7 @@ Going by hugo's quickstart you should use `git` - this is also what I would sugg
 cd awesome-future-site
 
 git init
-git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/tranquilpeak
+git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes/hugo-tranquilpeak-theme
 ```
 
 In case the `git submodule` part doesn't make sense to you: it's basically a way of telling get to keep track of a "sub project".
@@ -130,17 +130,50 @@ Okay, now we have the theme downloaded but how do we use it?
 Great question!
 
 ```sh
-echo 'theme = "tranquilpeak"' >> config.toml
+echo 'theme = "hugo-tranquilpeak-theme"' >> config.toml
 ```
 
-This appends the line `theme = "tranquilpeak"` to your `config.toml` file.
+This appends the line `theme = "hugo-tranquilpeak-theme"` to your `config.toml` file.
 Alternatively you can just open it with your favorite editor and add it this way.
 
-Now, let's look at your page again, shall we?
-
-![Your new page](page-with-theme.png)
+Let's look at your page again, shall we?
+Reminder: use `hugo server` to render the page.
+  
+{{<
+  image
+    classes="fancybox"
+    src="page-with-theme.png"
+>}}
 
 Meh, still rather boring but we're getting there!
+
+Lucky for us tranquilpeak offers an example configuration which allows us to bootstrap the whole process.
+
+```sh
+# Backup your previous configuraiton, if you want
+cp config.toml config.toml.backup
+cp themes/hugo-tranquilpeak-theme/exampleSite/config.toml .
+```
+
+<!-- How does it look like now (as a reminder, type `hugo server` into your command line)? -->
+How does it look like now? 
+
+{{<
+  image
+    alt="Your new page with some configuration"
+    classes="fancybox"
+    src="page-with-configured-theme.png"
+ >}}
+
+Now that's something!
+
+<!-- From here on it should be easy to look into the `config.toml`  -->
+<!-- Feel free to play a bit around with the `config.toml` and look how it affects the page. -->
+Go ahead, play a bit around with the various options in the `config.toml` and see how it affects the page.
+I'll wait here for you.
+
+Also checkout [tranquilpeak's user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to see which configuration does what.
+Alternatively you can look at [my configuration on github](https://github.com/Zeeker/blog/blob/post/how-to-build-your-professional-website/config.yml).
 
 # Is it hard?
 
