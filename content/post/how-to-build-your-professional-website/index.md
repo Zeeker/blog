@@ -208,6 +208,8 @@ keywords:
 
 ```
 
+<!-- ;;; Write more here! -->
+
 You can now start typing away merrily and check your progress with `hugo server`.
 To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md)
 
@@ -232,17 +234,20 @@ Enter "now".
 [now][now] is a deployment and hosting service by the fine folks at zeit.
 It's mainly target at serverless applications but can just as easily be used for website hosting.
 
-This section will teach you two things:
+This section will teach you a number of things:
 
 1. how to use `now` to immediately put your page onto the web
 2. how to build your page with `now`
+3. how to automate the whole process
 
-Step 2 will then allow us to automate the whole process, so you just need to push your changes to github.
-But no worries, I'll explain everything along the way!
+<!-- Step 2 will then allow us to automate the whole process, so you just need to push your changes to github. -->
+At the end of it you'll have a repository up on github and your page will be automagically deployed when you push changed files!
+<!-- But no worries, I'll explain every along the way! -->
+No worries if that sounds a bit intimidating, I'll be here to guide you along the way!
 
-# Is it hard?
+## Now v1 or v2?
 
-# Alternatives?
+Shortly after I built this page now announced v2 of their service, which revolves around [builders](https://zeit.co/docs/v2/deployments/builders/overview/).
 
 
 
