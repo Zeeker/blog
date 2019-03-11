@@ -52,7 +52,7 @@ params:
   thumbnailImage: true
   thumbnailImagePosition: bottom
 
-  coverImage: cover-blur.jpg
+  coverImage: /cover-blur.jpg
   favicon: /images/favicon.ico
 
   sidebarBehavior: 2
