@@ -1,17 +1,14 @@
-baseURL: 'https://blog.saschawolf.me/'
 theme: tranquilpeak
 
 title: Sascha Wolf
-
-paginate: 7
-canonifyURLs: true
 
 disqusShortname: wolf4earth
 googleAnalytics: UA-129291125-1
 
 # Language
-languageCode: en-us
 defaultContentLanguage: en-us
+languageCode: en-us
+paginate: 7
 
 permalinks:
   post: '/:year/:month/:slug/'
