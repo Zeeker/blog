@@ -351,6 +351,100 @@ Now go visit the printed URL and if everything is fine it should look similar to
 
 If it looks broken then please visit the [previous section on ensuring that hugo uses relative URLs]({{< ref "#tell-hugo-to-use-relative-urls" >}}).
 
+## A nice name for a nice page
+
+<!-- Let's do a recap:
+
+- we have created a (admittedly basic) page with hugo
+- we have deployed this page with now -->
+First give yourself a pat on the shoulder.
+You have created a (admittedly simple) page and deployed it for everybody to see.
+
+In theory you could go out and share this link with your friends, family, hairdresser, or whoever your heart desires.
+But this link is not really **nice**, is it?
+
+So, how can we get a nice link?
+For example something like [blog.saschawolf.me][sw-blog]?
+
+For that you need a **domain**.
+There are basically two options right now:
+
+1. you use a free subdomain from zeit
+2. you buy a domain and use that
+
+We'll look at both options but let's start with the first one.
+
+### Now subdomains
+
+Now allows you to **alias** your deployment.
+Let's try it out:
+
+```sh
+# Alias your previous deployment to my-awesome-page.now.sh
+now alias set public-abcdefghi.now.sh my-awesome-page.now.sh
+```
+
+*You probably need to swap out `my-awesome-page` with something else because I hog that subdomain. 😋*
+
+If you're fine with this: great!
+You can skip the rest of this section and read on.
+If you want your truly own domain, then read on.
+
+### Your own domain
+
+[my-awesome-page.now.sh](https://my-awesome-page.now.sh) is pretty nice but it's not truly yours, you know?
+So how can you get something like [blog.saschawolf.me][sw-blog]?
+
+For that you'll have to **buy** a domain.
+Lucky for us now allows you to buy domains directly from the command line.
+You'll need to add a credit card to your account for that, if that's an issue you'll need to use a difference service.
+[Namecheap](https://www.namecheap.com/) for example accept PayPal.
+I can recommend them, I used them to buy this domain.
+
+But let's assume you decided to buy your own domain from now and ensured it's available ([you can check that here](https://zeit.co/domains)).
+All you need to do is run:
+
+```sh
+now domain buy my-great-domain.com
+```
+
+After you confirmed the purchase you can now alias your page:
+
+```sh
+now alias set public-abcdefghi.now.sh my-great-domain.com
+```
+
+And that's it.
+No DNS fiddling.
+No additional setup.
+**It just works.**
+
+Here a pro tip: You can also just run the latter command and now will **ask you** if you want to buy the domain.
+Neat huh?
+
+## What's next?
+
+If you got until here: congratulations!
+
+You're able to build your own page with hugo and deploy it to now.
+But right now this involves a number of manual steps.
+
+- you have to build your page
+- you have to deploy it
+- you have to alias it
+
+Pretty tedious to do every time, right?
+Let's automate it!
+
+# Automate it!
+
+For this section I'll assume you'll have the following setup:
+
+- a now account ([create one here](https://zeit.co/signup))
+- a github account ([create one here](https://github.com/join))
+
+After this part you'll be able to push your code into a github repository and let now do all the deployment work for you.
+
 ## Now v1 or v2?
 
 Shortly after I built this page now announced v2 of their service, which revolves around [builders](https://zeit.co/docs/v2/deployments/builders/overview/).
@@ -373,3 +467,4 @@ No hard feelings.
 [github]: http://github.com/
 [markdown]: https://daringfireball.net/projects/markdown/
 [now]: https://zeit.co/now
+[sw-blog]: https://blog.saschawolf.me/
