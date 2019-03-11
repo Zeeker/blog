@@ -397,8 +397,10 @@ So how can you get something like [blog.saschawolf.me][sw-blog]?
 
 For that you'll have to **buy** a domain.
 Lucky for us now allows you to buy domains directly from the command line.
-You'll need to add a credit card to your account for that, if that's an issue you'll need to use a difference service.
-[Namecheap](https://www.namecheap.com/) for example accept PayPal.
+
+For that to work you'll need to add a credit card to your account.
+If that's an issue you'll probably need to use a difference service.
+[Namecheap](https://www.namecheap.com/) for example accepts PayPal.
 I can recommend them, I used them to buy this domain.
 
 But let's assume you decided to buy your own domain from now and ensured it's available ([you can check that here](https://zeit.co/domains)).
