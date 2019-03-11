@@ -245,9 +245,126 @@ At the end of it you'll have a repository up on github and your page will be aut
 <!-- But no worries, I'll explain every along the way! -->
 No worries if that sounds a bit intimidating, I'll be here to guide you along the way!
 
+## Setup now
+
+<!-- First of all we will need to install the now command line tool. -->
+<!-- First of all we will need to install now. -->
+<!-- There are two versions  -->
+<!-- You can either opt for the [full desktop version](https://zeit.co/download) or only install the [command line tools](https://zeit.co/docs/v2/getting-started/installation/). -->
+<!-- Since installing the desktop app also installs the command line tool I'll leave the choice to you. -->
+<!-- For completion sake I will include the  -->
+To install now you'll have to install their desktop app.
+No worries, it's minimalistic and keeps your `now` command line program automagically up-to-date!
+You can either download it directly from [their website](https://zeit.co/download) or use `brew` to install it:
+
+```sh
+brew update
+brew cask install now
+```
+
+I'll leave the choice to you.
+
+After installation there should be a `now` command available on your command line.
+You can test it by typing the following:
+
+```sh
+now --version
+```
+
+If you see some kind of version number and not an error than you're ready to go.
+For me this prints `14.0.3`.
+
+The only thing which is missing to finish the setup is to login into your now account.
+If you don't have one yet then you can [create one here](https://zeit.co/signup).
+After that is done simply type the following into your command line:
+
+```sh
+now login
+```
+
+This will prompt you for your email address, send you an email with a magic link which automagically logs you in.
+Pretty neat, huh?
+
+## Tell hugo to use relative URLs
+
+Before we get to the fun part we need to make sure that certain configurations are properly set.
+The config you copied earlier makes some choices which are not suitable for making quick deployments.
+
+Run the following to check your config:
+
+```sh
+hugo config | grep -iE 'baseurl|canonifyurls'
+```
+
+If everything is fine this should just print:
+
+```
+canonifyurls = false
+```
+
+If it prints anything else (most notably a `baseurl` and/or `canonifyurls = true`) then please open your `config.toml`.
+Now remove the `baseURL` and set `canonifyURLs` to `false`.
+
+Why are we doing this you ask?
+You see `canonifyURLs` tells hugo to create **absolute URLs** for everything.
+That means your `baseURL` needs to point to the correct URL already.
+But we want to do a quick deployment with an auto-generated URL from now, so obviously we don't know the `baseURL` until we deployed.
+
+By removing the `baseURL` and setting `canonifyURLs` to `false` all the URLs will be **relative** which in turn will ensure that our page will be properly displayed.
+
+With that out of the way, let's get to the fun part: building and deploying your page.
+
+## Deploy right now!
+
+Deployment with `now` is very, very simple:
+
+```sh
+# This builds your page
+hugo
+
+# This deploys your page
+now --public public
+```
+
+*The `--public` flag tells now that we're okay with the files being publicly visible (at `/_src`).*
+
+This will print something along the lines of:
+
+```
+Deploying ~/path/to/your/page/public under your-user-name
+> Using project public
+> Synced 1 file (37.95KB) [1s]
+> https://public-abcdefghi.now.sh [v1] [in clipboard] [5s]
+> Deployment complete!
+```
+
+And that's it!
+Your page is deployed!
+
+Now go visit the printed URL and if everything is fine it should look similar to this:
+
+{{<
+  image
+    classes="fancybox"
+    src="page-deployed1.png"
+>}}
+
+If it looks broken then please visit the [previous section on ensuring that hugo uses relative URLs]({{< ref "#tell-hugo-to-use-relative-urls" >}}).
+
 ## Now v1 or v2?
 
 Shortly after I built this page now announced v2 of their service, which revolves around [builders](https://zeit.co/docs/v2/deployments/builders/overview/).
+What we need is a **static deployment**; we run hugo once and use the resulting files as they are.
+<!-- No backend logic necessary. -->
+For that now offers a [static builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/) which - when you take a look at the docs - actually uses hugo as an example.
+Nevertheless I will talk on how to setup a v1 deployment using a Dockerfile, since that is what I use for this page!
+But if you would rather use a v2 deployment, then go ahead!
+No hard feelings.
+
+<!-- Furthermore using a Dockerfile will also make migration  -->
+<!-- Furthermore - if you ever decide to switch your hosting provider - a Dockerfile will give you more flexibility. -->
+
+
 
 
 
