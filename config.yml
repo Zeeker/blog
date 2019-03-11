@@ -71,9 +71,6 @@ params:
     - name: Twitter
       icon: fa-twitter
       url: 'https://twitter.com/intent/tweet?text=%s'
-    - name: Google+
-      icon: fa-google-plus
-      url: 'https://plus.google.com/share?url=%s'
     - name: Reddit
       icon: fa-reddit
       url: 'http://www.reddit.com/submit?url=%s'
