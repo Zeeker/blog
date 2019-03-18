@@ -13,7 +13,7 @@ keywords:
 - markdown
 - website
 autoThumbnailImage: false
-coverImage: cover.jpg
+coverImage: /images/posts/how-to-build-your-professional-website/cover.jpg
 coverCaption: Photo by Christopher Gower on Unsplash
 coverSize: partial
 # metaAlignment: center
@@ -23,9 +23,10 @@ showSummary: false
 *This is part 1 of a 3 part series.*
 *You can find the other parts here:*
 
-1. *[create your site using hugo][part-1]*
+1. *__[build your site using hugo][part-1]__*
 2. *[deploy and host your page with now and setup your own domain][part-2]*
-3. *[use github and now to automatically deploy everything on push][part-3]*
+<!-- 3. *[use github and now to automatically deploy everything on push][part-3]* -->
+3. *use github and now to automatically deploy everything on push (coming soon!)*
 
 <!--toc-->
 
@@ -205,4 +206,3 @@ Enter "now".
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
-[part-3]: {{< ref "part-3-automation" >}}

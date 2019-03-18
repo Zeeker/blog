@@ -22,7 +22,7 @@ keywords:
 - docker
 - automation
 autoThumbnailImage: false
-coverImage: cover.jpg
+coverImage: /images/posts/how-to-build-your-professional-website/cover.jpg
 coverCaption: Photo by Christopher Gower on Unsplash
 coverSize: partial
 # metaAlignment: center

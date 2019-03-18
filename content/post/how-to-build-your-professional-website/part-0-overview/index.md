@@ -13,7 +13,7 @@ keywords:
 - hugo
 - web
 autoThumbnailImage: false
-coverImage: cover.jpg
+coverImage: /images/posts/how-to-build-your-professional-website/cover.jpg
 coverCaption: Photo by Christopher Gower on Unsplash
 # coverSize: partial
 # metaAlignment: center
@@ -40,9 +40,10 @@ So please, sit back, grab a hot beverage and enjoy the hard earned knowledge I d
 This tutorial is split into three distinct parts.
 Each of these a crucial but distinct part in builing your page:
 
-1. [create your site using hugo][part-1]
-2. [deploy and host your page with now and setup your own domain][part-2]
-3. [use github and now to automatically deploy everything on push][part-3]
+1. *[build your site using hugo][part-1]*
+2. *[deploy and host your page with now and setup your own domain][part-2]*
+<!-- 3. *[use github and now to automatically deploy everything on push][part-3]* -->
+3. *use github and now to automatically deploy everything on push (coming soon!)*
 
 At the end of this you'll have all the skills necessary to create a website **just like this one**.
 Let's get started, shall we?
@@ -52,4 +53,3 @@ Let's get started, shall we?
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
-[part-3]: {{< ref "part-3-automation" >}}
