@@ -20,6 +20,7 @@ coverImage: cover.jpg
 coverCaption: Photo by Christopher Gower on Unsplash
 coverSize: partial
 # metaAlignment: center
+showSummary: false
 ---
 
 *This is part 2 of a 3 part series.*
