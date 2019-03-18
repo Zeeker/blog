@@ -1,6 +1,6 @@
 ---
 title: "How to build your professional website - Part 1: Build with Hugo"
-date: 2019-02-24T20:50:07+01:00
+date: 2019-03-18
 categories:
 - tech
 - web

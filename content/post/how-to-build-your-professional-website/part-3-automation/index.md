@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "How to build your professional website - Part 3: Automate it!"
-date: 2019-02-24T20:50:07+01:00
+date: 2019-03-18
 categories:
 - tech
 - web
