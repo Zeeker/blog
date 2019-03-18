@@ -19,38 +19,24 @@ coverCaption: Photo by Christopher Gower on Unsplash
 # metaAlignment: center
 ---
 
-<!-- So, you want to create your own website/blog/whatever. -->
-<!-- Where do you start? -->
-<!-- If you're like me, the idea of creating your own website/blog/whatever is intimidating. -->
 The idea of creating your own website/blog/whatever can sound intimidating.
-<!-- There are a million questions which need to be answered: -->
 There are a million questions with seemingly even more answers.
 
 - What's the best way to create your page?
-<!-- From scatch? -->
-<!-- A framework? -->
-<!-- Some kind of editor? -->
-<!-- Should you create it from scratch or use some kind of framework? -->
 - Where can you host it?
 - How do you get your own domain?
 
 And many, many more.
 Where do you even start?
-<!--more-->
 
-<!-- I certainly thought like that. -->
-<!-- Luckily for you, I already did the hard work and then wrote this blog post. -->
-<!-- Well, today is your lucky day. -->
 But, you're in luck!
 I used to have the same questions and today I'm gonna share my answers with you.
-<!-- I obviously managed to do this, you're on my blog after all. -->
-<!-- And if I can do it, you can too. -->
-<!-- So please, sit back, grab a hot beverage and enjoy the hard earned knowledge I distilled in this blog post. -->
 So please, sit back, grab a hot beverage and enjoy the hard earned knowledge I distilled in this tutorial.
+
+<!--more-->
 
 # What you will learn
 
-<!-- In this post you will learn how to: -->
 This tutorial is split into three distinct parts.
 Each of these a crucial but distinct part in builing your page:
 
