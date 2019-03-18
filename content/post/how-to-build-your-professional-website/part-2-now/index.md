@@ -71,12 +71,13 @@ You can test it by typing the following:
 now --version
 ```
 
-If you see some kind of version number and not an error than you're ready to go.
+If you see some kind of version number (and not an error) then you're ready to go.
 For me this prints `14.0.3`.
 
 The only thing which is missing to finish the setup is to login into your now account.
-If you don't have one yet then you can [create one here](https://zeit.co/signup).
-After that is done simply type the following into your command line:
+<!-- If you don't have one yet then you can [create one here](https://zeit.co/signup). -->
+You can [create one here](https://zeit.co/signup), if necessary.
+After that all you need to do is typing the following into your command line:
 
 ```sh
 now login
@@ -88,7 +89,7 @@ Pretty neat, huh?
 # Tell hugo to use relative URLs
 
 Before we get to the fun part we need to make sure that certain configurations are properly set.
-The config you copied earlier makes some choices which are not suitable for making quick deployments.
+The Hugo config you copied in [part 1][part-1] uses some defaults which are not suited for quick deployments.
 
 Run the following to check your config:
 
@@ -103,22 +104,24 @@ canonifyurls = false
 ```
 
 If it prints anything else (most notably a `baseurl` and/or `canonifyurls = true`) then please open your `config.toml`.
-Now remove the `baseURL` and set `canonifyURLs` to `false`.
+<!-- Now remove the `baseURL` and set `canonifyURLs` to `false`. -->
+From there remove the `baseURL` and set `canonifyURLs` to `false`.
 
-Why are we doing this you ask?
+Why are we doing this, you ask?
 You see `canonifyURLs` tells hugo to create **absolute URLs** for everything.
 That means your `baseURL` needs to point to the correct URL already.
-But we want to do a quick deployment with an auto-generated URL from now, so obviously we don't know the `baseURL` until we deployed.
+But we want to do a quick deployment with an auto-generated URL, so obviously we don't know the `baseURL` until we deployed.
 
 By removing the `baseURL` and setting `canonifyURLs` to `false` all the URLs will be **relative** which in turn will ensure that our page will be properly displayed.
 
-With that out of the way, let's get to the fun part: building and deploying your page.
+<!-- With that out of the way, let's get to the fun part: building and deploying your page. -->
+Now finally let's get to the fun part: building and deploying your page.
 
 **Important Note:** Sadly the tranquilpeak theme makes some choices which are not compatible with relative URLs.
 So while this is great for quick testing, it (for example) busts relative post thumbnails.
 
 I've opened [a PR](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/333) which fixes the issues, so this might change in the future.
-Until then you'll either have to use the original configuration for your final page or fork the project, apply my changes and use your fork.
+Until then you'll either have to use the original configuration for your final page or use my branch from the PR.
 
 # Deploy right now!
 
@@ -242,7 +245,7 @@ But right now this involves a number of manual steps.
 - you have to alias it
 
 Pretty tedious to do every time, right?
-Let's automate it!
+So, let's automate it!
 
 *Part 3 (Automate it) will follow soon. Stay tuned!*
 <!-- *[Continue with part 3: automate it!][part-3]* -->
