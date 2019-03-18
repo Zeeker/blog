@@ -114,6 +114,12 @@ By removing the `baseURL` and setting `canonifyURLs` to `false` all the URLs wil
 
 With that out of the way, let's get to the fun part: building and deploying your page.
 
+**Important Note:** Sadly the tranquilpeak theme makes some choices which are not compatible with relative URLs.
+So while this is great for quick testing, it (for example) busts relative post thumbnails.
+
+I've opened [a PR](https://github.com/kakawait/hugo-tranquilpeak-theme/pull/333) which fixes the issues, so this might change in the future.
+Until then you'll either have to use the original configuration for your final page or fork the project, apply my changes and use your fork.
+
 # Deploy right now!
 
 Deployment with `now` is very, very simple:
@@ -126,7 +132,7 @@ hugo
 now --public public
 ```
 
-*The `--public` flag tells now that we're okay with the files being publicly visible (at `/_src`).*
+*The `--public` flag tells now that we're okay with the raw files being publicly visible (at `/_src`).*
 
 This will print something along the lines of:
 
@@ -157,7 +163,7 @@ If it looks broken then please visit the [previous section on ensuring that hugo
 
 - we have created a (admittedly basic) page with hugo
 - we have deployed this page with now -->
-First give yourself a pat on the shoulder.
+First give yourself a pat on the back.
 You have created a (admittedly simple) page and deployed it for everybody to see.
 
 In theory you could go out and share this link with your friends, family, hairdresser, or whoever your heart desires.
@@ -184,7 +190,7 @@ Let's try it out:
 now alias set public-abcdefghi.now.sh my-awesome-page.now.sh
 ```
 
-*You probably need to swap out `my-awesome-page` with something else because I hog that subdomain. 😋*
+*You probably need to swap out `my-awesome-page` with something else because I hog that subdomain.* 😋
 
 If you're fine with this: great!
 You can skip the rest of this section and read on.
@@ -238,7 +244,8 @@ But right now this involves a number of manual steps.
 Pretty tedious to do every time, right?
 Let's automate it!
 
-*[Continue with part 3: automate it!][part-3]*
+*Part 3 (Automate it) will follow soon. Stay tuned!*
+<!-- *[Continue with part 3: automate it!][part-3]* -->
 
 [hugo]: https://gohugo.io/
 [now]: https://zeit.co/now
