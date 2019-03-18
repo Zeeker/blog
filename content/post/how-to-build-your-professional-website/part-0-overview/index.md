@@ -1,7 +1,7 @@
 ---
 title: "How to build your professional website (like this one!)"
 slug: how-to-build-your-professional-website
-date: 2019-03-18
+date: 2019-03-18T00:00:00Z
 categories:
 - tech
 - web

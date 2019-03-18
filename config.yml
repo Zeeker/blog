@@ -48,8 +48,9 @@ params:
   clearReading: true
   hierarchicalCategories: true
   imageGallery: true
+  swapPaginator: true
 
-  autoThumbnailImage: true
+  autoThumbnailImage: false
   thumbnailImage: true
   thumbnailImagePosition: bottom
 

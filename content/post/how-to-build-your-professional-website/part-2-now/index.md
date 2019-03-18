@@ -1,6 +1,6 @@
 ---
 title: "How to build your professional website - Part 2: Deploy with Now"
-date: 2019-03-18
+date: 2019-03-18T02:00:00Z
 categories:
 - tech
 - web
