@@ -30,22 +30,27 @@ showSummary: false
 
 <!--toc-->
 
-# Create your page using [Hugo][hugo]
+# Introducing [Hugo][hugo]
 
 Hugo claims to be "the world’s fastest framework for building websites".
 I have no idea if that's true but I can say that it's easy to setup, use, and produces great results.
+
 <!-- But I'm getting ahead of myself. -->
-In this section we will pretty much follow along [hugo's quickstart](https://gohugo.io/getting-started/quick-start/).
+<!-- In this section we will pretty much follow along [hugo's quickstart](https://gohugo.io/getting-started/quick-start/). -->
+In this part we will mostly (but not exclusively) follow along [Hugo's quickstart](https://gohugo.io/getting-started/quick-start/).
 So if you would rather read that, go ahead.
 No hard feelings.
+If you decide to do so, then you can skip this and go directly to [part 2 on how to deploy and host your page][part-2].
 
-Assuming you're on macOS installing hugo is as simple as typing into your CLI (you'll need to have [brew](https://brew.sh/) installed):
+# Installing Hugo
+
+Assuming you're on macOS installing Hugo is as simple as typing into your CLI (you'll need to have [brew](https://brew.sh/) installed):
 
 ```sh
 brew install hugo
 ```
 
-*[Click here to find out how to install hugo for other platforms.](https://gohugo.io/getting-started/installing)*
+*[Click here to find out how to install Hugo for other platforms.](https://gohugo.io/getting-started/installing)*
 
 <!-- After that you can create the basic framework of your future site by typing: -->
 After that you can create your future site by typing:
@@ -58,7 +63,7 @@ hugo new site awesome-future-site
 This will create a folder named - you might have guessed it - `awesome-future-site`.
 <!-- You could now use `hugo server` to see how it looks, but **spoiler** that would be pretty boring. -->
 You could now use `hugo server` to see how it looks, but (**spoiler**) it's pretty boring.
-By default hugo generates an empty page with nothing in it.
+By default Hugo generates an empty page with nothing in it.
 So how do we make it pretty?
 
 This is where themes come into play.
@@ -66,8 +71,8 @@ This is where themes come into play.
 # Picking a theme
 
 Hugo offers a number of themes, most of them contributed by the community.
-In this tutorial I'll go with the [tranquilpeak theme](https://themes.gohugo.io/hugo-tranquilpeak-theme/) simply because it's the one you're looking at right now.
-Feel free to look through [the other ones hugo is offering](https://themes.gohugo.io/).
+In this tutorial I'll go with the [tranquilpeak theme][tranquilpeak] simply because it's the one you're looking at right now.
+Feel free to look through [the other ones Hugo is offering](https://themes.gohugo.io/).
 
 {{<
   figure
@@ -79,7 +84,7 @@ Feel free to look through [the other ones hugo is offering](https://themes.gohug
 
 To install a theme you'll need to download it into the `themes` folder of your `awesome-future-site`.
 How do you do that?
-Going by hugo's quickstart you should use `git` - this is also what I would suggest.
+Going by Hugo's quickstart you should use `git` - this is also what I would suggest.
 
 ```sh
 cd awesome-future-site
@@ -143,9 +148,14 @@ Alternatively you can look at [my configuration on github](https://github.com/Ze
 
 # Content, content, content
 
-Now that we have the basic scaffolding for your page it's time to start writing.
-With hugo this is done in [markdown][markdown].
-If you're unfamiliar with markdown I would suggest to google for a tutorial, it's really simple and great to use.
+Now that we have the foundations for your page it's time to start writing.
+
+With Hugo this is done in [markdown][markdown].
+<!-- If you're unfamiliar with markdown I would suggest to google for a tutorial, it's really simple and great to use. -->
+If you're unfamiliar with markdown, I strongly suggest to take a look at it.
+It's very, very simple so getting the basics will take you 5 minutes.
+Check out [this awesome interactive tutorial](https://www.markdowntutorial.com/)!
+
 
 With that out of the way, lets create your first post!
 Open your command line again and type:
@@ -174,35 +184,49 @@ keywords:
 
 ```
 
-<!-- ;;; Write more here! -->
+The "block" on top will not be rendered in the final version.
+Instead it serves as a place for your posts configuration.
+Here you can specify things such as a cover and thumbnail image, the behaviour of the menu and so.
+For details on the configuration I suggest to read the [relevant section in the tranquilpeak docs](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts).
 
-You can now start typing away merrily and check your progress with `hugo server`.
-To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md)
+<!-- You can now start typing away merrily and check your progress with `hugo server`.
+To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md) -->
+If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog/post/how-to-build-your-professional-website/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
+You might see some funny things in here, for example the `{{< raw "{{< figure ... >}}" >}}` stuff.
+Hugo calls these [shortcodes](https://gohugo.io/content-management/shortcodes/) which act as simple snippets for things such as embedding YouTube videos etc.. Apart from this everything else should be pretty straightforward.
 
-Also you might want to take a peek into the [relevant section in the tranquilpeak docs](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts), which explains all the configuration seen above.
-
-We could continue to talk about all the features of hugo but that would blow this post out of proportion.
-There are more interesting things to come.
+<!-- We could continue to talk about all the features of hugo but that would blow this post out of proportion. -->
+There are other great things about hugo but that would blow this post out of proportion.
+As it stands you should have all the tools at hand to generate your page.
+<!-- There are more interesting things to come. -->
+So what are you waiting for?
 
 # And now?
 
 <!-- Before we go on to the next section (hosting) let's quickly recap what we learned. -->
-Let's recap.
-We've learned how to create a basic page with hugo and how to write simple posts with it.
-<!-- REPHRASE -->
-But up until now everything was just locally.
+Let's recap!
+<!-- We've learned how to create a basic page with hugo and how to write simple posts with it. -->
+So far we've learned:
 
-The real question is: How do we get this on the web?
-Enter "now".
+- how to install hugo
+- about themes in general and the [tranquilpeak theme][tranquilpeak] in particular
+- how to create posts and that they are writen in [markdown][markdown]
 
-*[Continue with part 2: now!][part-2]*
+All in all that's pretty good, so please give yourself a pat on the back.
+Okay, done? Great!
+
+<!-- But up until now everything was just locally. -->
+<!-- But up until now everything happened on your computer. -->
+The thing is: up until now everything only happened on your computer.
+Nobody except you can see it.
+<!-- The real question is: How do we get this on the web? -->
+So, how do we get this on the web?
+
+[Let's find out in the next part: Enter __now__!][part-2]
 
 [hugo]: https://gohugo.io/
-[now]: https://zeit.co/now
-[github]: http://github.com/
+[tranquilpeak]: https://themes.gohugo.io/hugo-tranquilpeak-theme/
 [markdown]: https://daringfireball.net/projects/markdown/
-[now]: https://zeit.co/now
-[sw-blog]: https://blog.saschawolf.me/
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
