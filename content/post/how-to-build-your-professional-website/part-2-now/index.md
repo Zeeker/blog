@@ -41,13 +41,9 @@ It's mainly target at serverless applications but can just as easily be used for
 This section will teach you a number of things:
 
 1. how to use `now` to immediately put your page onto the web
-2. how to build your page with `now`
-3. how to automate the whole process
+2. how to setup a domain (a pretty name) for your website
 
-<!-- Step 2 will then allow us to automate the whole process, so you just need to push your changes to github. -->
-At the end of it you'll have a repository up on github and your page will be automagically deployed when you push changed files!
-<!-- But no worries, I'll explain every along the way! -->
-No worries if that sounds a bit intimidating, I'll be here to guide you along the way!
+At the end of it you'll probably be surprised how easy this was.
 
 # Setup now
 
@@ -58,7 +54,7 @@ No worries if that sounds a bit intimidating, I'll be here to guide you along th
 <!-- Since installing the desktop app also installs the command line tool I'll leave the choice to you. -->
 <!-- For completion sake I will include the  -->
 To install now you'll have to install their desktop app.
-No worries, it's minimalistic and keeps your `now` command line program automagically up-to-date!
+No worries, it's minimalistic and keeps your `now` command line tool automagically up-to-date!
 You can either download it directly from [their website](https://zeit.co/download) or use `brew` to install it:
 
 ```sh
