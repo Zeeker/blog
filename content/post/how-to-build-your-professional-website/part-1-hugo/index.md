@@ -95,10 +95,10 @@ git submodule add https://github.com/kakawait/hugo-tranquilpeak-theme.git themes
 
 In case the `git submodule` part doesn't make sense to you: it's basically a way of telling get to keep track of a "sub project".
 Don't worry too much about it.
-If you want to worry you can read more about it [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
+If you want to worry, you can read more about it [here](https://git-scm.com/book/en/v2/Git-Tools-Submodules).
 
 Okay, now we have the theme downloaded but how do we use it?
-Great question!
+Great question, that's pretty easy!
 
 ```sh
 echo 'theme = "hugo-tranquilpeak-theme"' >> config.toml
@@ -191,7 +191,7 @@ For details on the configuration I suggest to read the [relevant section in the 
 
 <!-- You can now start typing away merrily and check your progress with `hugo server`.
 To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md) -->
-If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog/post/how-to-build-your-professional-website/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
+If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog/master/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
 You might see some funny things in here, for example the `{{< raw "{{< figure ... >}}" >}}` stuff.
 Hugo calls these [shortcodes](https://gohugo.io/content-management/shortcodes/) which act as simple snippets for things such as embedding YouTube videos etc.. Apart from this everything else should be pretty straightforward.
 
