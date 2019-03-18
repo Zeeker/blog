@@ -191,7 +191,7 @@ For details on the configuration I suggest to read the [relevant section in the 
 
 <!-- You can now start typing away merrily and check your progress with `hugo server`.
 To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md) -->
-If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog/master/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
+If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog//content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
 You might see some funny things in here, for example the `{{< raw "{{< figure ... >}}" >}}` stuff.
 Hugo calls these [shortcodes](https://gohugo.io/content-management/shortcodes/) which act as simple snippets for things such as embedding YouTube videos etc.. Apart from this everything else should be pretty straightforward.
 
@@ -209,7 +209,7 @@ Let's recap!
 So far we've learned:
 
 - how to install hugo
-- about themes in general and the [tranquilpeak theme][tranquilpeak] in particular
+- how to use a theme, specifically the [tranquilpeak theme][tranquilpeak]
 - how to create posts and that they are writen in [markdown][markdown]
 
 All in all that's pretty good, so please give yourself a pat on the back.
