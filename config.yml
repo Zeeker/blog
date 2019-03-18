@@ -1,24 +1,24 @@
-baseURL: 'https://blog.saschawolf.me/'
 theme: tranquilpeak
 
 title: Sascha Wolf
 
-paginate: 7
-canonifyURLs: true
-
+disqusShortname: wolf4earth
 googleAnalytics: UA-129291125-1
 
 # Language
-languageCode: en-us
 defaultContentLanguage: en-us
+languageCode: en-us
+paginate: 7
 
 permalinks:
   post: '/:year/:month/:slug/'
 
 author:
   name: Sascha Wolf
-  bio: I solve problems
-  job: TSA / Full Stack Dev
+  bio: |-
+    <b>I solve problems</b><br/>
+    \#Compassion \#DDD \#Tech
+  job: Full Stack Dev / TSA
   location: 'Cologne, Germany'
   gravatarEmail: swolf.dev@gmail.com
   twitter: wolf4earth
@@ -32,12 +32,15 @@ params:
   keywords:
     - backend
     - blog
+    - compassion
     - cloud
+    - DDD
     - elixir
     - erlang
     - frontend
     - full-stack
     - git
+    - productivity
     - serverless
     - web
 
@@ -49,7 +52,7 @@ params:
   thumbnailImage: true
   thumbnailImagePosition: bottom
 
-  coverImage: cover-blur.jpg
+  coverImage: /cover-blur.jpg
   favicon: /images/favicon.ico
 
   sidebarBehavior: 2
@@ -68,9 +71,6 @@ params:
     - name: Twitter
       icon: fa-twitter
       url: 'https://twitter.com/intent/tweet?text=%s'
-    - name: Google+
-      icon: fa-google-plus
-      url: 'https://plus.google.com/share?url=%s'
     - name: Reddit
       icon: fa-reddit
       url: 'http://www.reddit.com/submit?url=%s'
