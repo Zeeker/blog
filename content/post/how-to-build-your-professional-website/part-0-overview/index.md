@@ -51,5 +51,7 @@ Let's get started, shall we?
 *Note: This post assumes you have some basic knowledge about the command line and git.*
 *If you are not familiar with git - or don't feel comfortable using it - [take a look at it's website](https://git-scm.com/).*
 
+*[Continue with part 1: Build with hugo.][part-1]*
+
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
