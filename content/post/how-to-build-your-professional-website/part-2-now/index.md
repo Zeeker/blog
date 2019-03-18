@@ -94,7 +94,7 @@ The Hugo config you copied in [part 1][part-1] uses some defaults which are not 
 Run the following to check your config:
 
 ```sh
-hugo config | grep -iE 'baseurl|canonifyurls'
+hugo config | grep -iE 'canonifyurls'
 ```
 
 If everything is fine this should just print:
@@ -103,16 +103,16 @@ If everything is fine this should just print:
 canonifyurls = false
 ```
 
-If it prints anything else (most notably a `baseurl` and/or `canonifyurls = true`) then please open your `config.toml`.
+If it prints `canonifyurls = true` then please open your `config.toml`.
 <!-- Now remove the `baseURL` and set `canonifyURLs` to `false`. -->
-From there remove the `baseURL` and set `canonifyURLs` to `false`.
+From there set `canonifyURLs` to `false`.
 
 Why are we doing this, you ask?
 You see `canonifyURLs` tells hugo to create **absolute URLs** for everything.
-That means your `baseURL` needs to point to the correct URL already.
-But we want to do a quick deployment with an auto-generated URL, so obviously we don't know the `baseURL` until we deployed.
+<!-- That means your `baseURL` needs to point to the correct URL already. -->
+Since we want to do a quick deployment with an auto-generated URLs, we don't know the URL until we deployed.
 
-By removing the `baseURL` and setting `canonifyURLs` to `false` all the URLs will be **relative** which in turn will ensure that our page will be properly displayed.
+By setting `canonifyURLs` to `false` all the URLs will be **relative** which in turn will ensure that our page will be properly displayed.
 
 <!-- With that out of the way, let's get to the fun part: building and deploying your page. -->
 Now finally let's get to the fun part: building and deploying your page.
