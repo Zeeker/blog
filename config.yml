@@ -77,6 +77,15 @@ params:
       icon: fa-reddit
       url: 'http://www.reddit.com/submit?url=%s'
 
+  legal:
+    - weight: 50
+      name: Imprint
+      url: https://saschawolf.me/imprint/en
+    - weight: 100
+      name: Privacy
+      url: https://saschawolf.me/privacy/en
+
+
 menu:
   main:
     - weight: 100
