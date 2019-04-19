@@ -1,7 +1,7 @@
 ---
 draft: true
 title: "How to build your professional website - Part 3: Automate it!"
-date: 2019-03-18
+date: 2019-04-19
 categories:
 - tech
 - web
@@ -60,19 +60,51 @@ Shortly after I built this page now announced v2 of their service, which revolve
 What we need is a **static deployment**; we run hugo once and use the resulting files as they are.
 <!-- No backend logic necessary. -->
 For that now offers a [static builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/) which - when you take a look at the docs - actually uses hugo as an example.
-Nevertheless I will talk on how to setup a v1 deployment using a Dockerfile, since that is what I use for this page!
-But if you would rather use a v2 deployment, then go ahead!
+
+<!-- Nevertheless I will talk on how to setup a v1 deployment using a Dockerfile, since that is what I use for this page! -->
+In this guide I'll now v1 with a Dockerfile, it's what I use for deploying this page after all.
+It's bit more involved - we need to create a Dockerfile after all - but I think it's a nice learning experience.
+
+Nevertheless if you would rather use a v2 deployment, then go ahead!
 No hard feelings.
 
-<!-- Furthermore using a Dockerfile will also make migration  -->
-<!-- Furthermore - if you ever decide to switch your hosting provider - a Dockerfile will give you more flexibility. -->
+# To Docker or not to Docker?
+
+So, you might have heard of Docker but maybe you never used it.
+In a nutshell Docker is a generalized approach to package software with all it's dependencies.
+I obviously can't go into the nitty gritty details on how Docker works here; if you're interested take a look at [this guide][docker-guide].
+
+What matters for us right now is this: the Dockerfile.
+A Dockerfile is basically a recepy which tells Docker how to package whatever you're trying to package.
+But let me show you!
+This is the Dockerfile which packages up this page:
+
+< link to github and Dockerfile here, shortcode? >
 
 
+
+# Creating a github repo
+
+- Use the `hub` cli tool
+- Via webinterface (link to docs)
+
+# Setup now integration on github
+
+Link to docs, some steps
+
+# now.json
+
+Configuration options, list relevant config here
+
+# Push Sesame
+
+And it works!
+
+[docker]: https://
+[docker-guide]: https://
 [hugo]: https://gohugo.io/
 [now]: https://zeit.co/now
 [github]: http://github.com/
-[markdown]: https://daringfireball.net/projects/markdown/
-[now]: https://zeit.co/now
 [sw-blog]: https://blog.saschawolf.me/
 
 [part-1]: {{< ref "part-1-hugo" >}}
