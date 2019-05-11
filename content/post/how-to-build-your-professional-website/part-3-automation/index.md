@@ -63,15 +63,17 @@ For that now offers a [static builder](https://zeit.co/docs/v2/deployments/offic
 
 <!-- Nevertheless I will talk on how to setup a v1 deployment using a Dockerfile, since that is what I use for this page! -->
 In this guide I'll now v1 with a Dockerfile, it's what I use for deploying this page after all.
-It's bit more involved - we need to create a Dockerfile after all - but I think it's a nice learning experience.
+It's bit more involved - you'll have to write a Dockerfile - but I think it's a nice learning experience.
 
 Nevertheless if you would rather use a v2 deployment, then go ahead!
 No hard feelings.
 
+<!-- ;;; Where to go to? -->
+
 # To Docker or not to Docker?
 
 So, you might have heard of Docker but maybe you never used it.
-<!-- !!! Verify -->
+<!-- ;;; Verify -->
 In a nutshell Docker is a generalized approach to package software with all it's dependencies.
 To do this you write a Dockerfile.
 A Dockerfile is basically a recepy which tells Docker how to package whatever you're trying to package.
@@ -84,7 +86,6 @@ While I obviously can't go into the nitty gritty details on the terminology here
 <!-- If you're interested take a look at [this guide][docker-guide]. -->
 <!-- If you're interested there are lots of great guides out there explaining it way better than I ever could. -->
 there are lots of great guides out there explaining it way better than I ever could.
-<!-- !!! Add link to guide -->
 <!-- [This guide][docker-guide] might be a good starting point. -->
 If you're interested, [this official guide][docker-guide] is a really good starting point.
 
@@ -110,9 +111,9 @@ In Docker-speech this is called a [multi-stage build](https://docs.docker.com/de
 
 Why you may ask?
 It makes the image very small since it only contains the files it needs to.
+If your build requires any secrets (which this one does not) it also protects you from leaking those secrets by accident.
 <!-- (Technically you don't need to do this, it's just good practice to safe space.) -->
-While this is not strictly necessary, it is good practice to keep the image small and focused.
-
+So while a multi-stage build is not strictly necessary, it is good practice.
 
 That's it.
 Feel free to use the Dockerfile from above and adjust it to your needs.
