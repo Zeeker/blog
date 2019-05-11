@@ -33,7 +33,7 @@ showSummary: false
 
 1. *[create your site using hugo][part-1]*
 2. *[deploy and host your page with now and setup your own domain][part-2]*
-3. *[use github and now to automatically deploy everything on push][part-3]*
+3. *__[use github and now to automatically deploy everything on push][part-3]__*
 
 <!--toc-->
 

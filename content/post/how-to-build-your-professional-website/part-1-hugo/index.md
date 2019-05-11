@@ -25,8 +25,7 @@ showSummary: false
 
 1. *__[build your site using hugo][part-1]__*
 2. *[deploy and host your page with now and setup your own domain][part-2]*
-<!-- 3. *[use github and now to automatically deploy everything on push][part-3]* -->
-3. *use github and now to automatically deploy everything on push (coming soon!)*
+3. *[use github and now to automatically deploy everything on push][part-3]*
 
 <!--toc-->
 
@@ -230,3 +229,4 @@ So, how do we get this on the web?
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
+[part-3]: {{< ref "part-3-automation" >}}

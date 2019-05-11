@@ -28,8 +28,7 @@ showSummary: false
 
 1. *[build your site using hugo][part-1]*
 2. *__[deploy and host your page with now and setup your own domain][part-2]__*
-<!-- 3. *[use github and now to automatically deploy everything on push][part-3]* -->
-3. *use github and now to automatically deploy everything on push (coming soon!)*
+3. *[use github and now to automatically deploy everything on push][part-3]*
 
 <!--toc-->
 
@@ -247,8 +246,7 @@ But right now this involves a number of manual steps.
 Pretty tedious to do every time, right?
 So, let's automate it!
 
-*Part 3 (Automate it) will follow soon. Stay tuned!*
-<!-- *[Continue with part 3: automate it!][part-3]* -->
+*[Continue with part 3: automate it!][part-3]*
 
 [hugo]: https://gohugo.io/
 [now]: https://zeit.co/now
@@ -259,3 +257,4 @@ So, let's automate it!
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
+[part-3]: {{< ref "part-3-automation" >}}
