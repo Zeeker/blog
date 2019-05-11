@@ -53,6 +53,25 @@ At the end of it you'll have a repository up on github and your page will be aut
 <!-- But no worries, I'll explain every along the way! -->
 No worries if that sounds a bit intimidating, I'll be here to guide you along the way!
 
+# Creating a github repo
+
+Since the scope of this post is not "how to use GitHub", I'll keep this section short and sweet.
+<!-- But if you've never created a repo before I'll link you to places which give lots input on how to do  -->
+
+For this step you basically have two options:
+
+1. use the official `hub` command line tool
+2. navigate the web interface
+
+If you wanna go with `hub` you can read about it [here](https://hub.github.com/).
+<!-- It's a neat tool and I can highly recommend it. -->
+It's basically GitHub on the command line and a neat tool.
+I can highly recommend it.
+
+On the other hand, if you prefer the web interface you can find everything in the [official docs from GitHub](https://help.github.com/en/articles/create-a-repo).
+They're very thorough and should answer all your questions.
+
+Now go, create a repository. 😉
 
 # Now v1 or v2?
 
@@ -119,11 +138,6 @@ That's it.
 Feel free to use the Dockerfile from above and adjust it to your needs.
 
 With that done we have completed the first step to full automation! 🎉
-
-# Creating a github repo
-
-- Use the `hub` cli tool
-- Via webinterface (link to docs)
 
 # Setup now integration on github
 
