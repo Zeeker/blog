@@ -41,10 +41,10 @@ showSummary: false
 
 For this section I'll assume you'll have the following setup:
 
-- a now account ([create one here](https://zeit.co/signup))
+- a `now` account ([create one here](https://zeit.co/signup))
 - a github account ([create one here](https://github.com/join))
 
-After this part you'll be able to push your code into a github repository and let now do all the deployment work for you.
+After this part you'll be able to push your code into a github repository and let `now` do all the deployment work for you.
 
 <!-- Step 2 will then allow us to automate the whole process, so you just need to push your changes to github. -->
 At the end of it you'll have a repository up on github and your page will be automagically deployed when you push changed files!
@@ -71,15 +71,15 @@ They're very thorough and should answer all your questions.
 
 Now go, create a repository. 😉
 
-# Setup now integration on github
+# Setup `now` integration on github
 
-Now that you have a GitHub repository it's time to create a link between it and your now account.
+Now that you have a GitHub repository it's time to create a link between it and your `now` account.
 To achieve that we need to first link your GitHub account.
 
-[Here](https://zeit.co/docs/v2/integrations/now-for-github/) is a link to the docs from now.
+[Here](https://zeit.co/docs/v2/integrations/now-for-github/) is a link to the docs from `now`.
 Nevertheless I'm gonna give you super quick bullet point rundown:
 
-1. go to your [now account page](https://zeit.co/account)
+1. go to your [`now` account page](https://zeit.co/account)
 2. look for a "GitHub Integration" section
 3. press the "Install Now for GitHub" button
 4. Login to GitHub, accept the prompt
@@ -87,15 +87,15 @@ Nevertheless I'm gonna give you super quick bullet point rundown:
 That's it, easy right?
 With the basic stuff out of the way we can get this part started! 🎉
 
-# Now v1 or v2?
+# `now` v1 or v2?
 
-Shortly after I built this page now announced v2 of their service, which revolves around [builders](https://zeit.co/docs/v2/deployments/builders/overview/).
+Shortly after I built this page `now` announced v2 of their service, which revolves around [builders](https://zeit.co/docs/v2/deployments/builders/overview/).
 What we need is a **static deployment**: we run hugo once and use the resulting files as they are.
 <!-- No backend logic necessary. -->
-For that now offers a [static builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/) which - when you take a look at the docs - actually uses hugo as an example.
+For that `now` offers a [static builder](https://zeit.co/docs/v2/deployments/official-builders/static-build-now-static-build/) which - when you take a look at the docs - actually uses hugo as an example.
 
 <!-- Nevertheless I will talk on how to setup a v1 deployment using a Dockerfile, since that is what I use for this page! -->
-Nevertheless in this guide I'll go with now v1 with a Dockerfile, it's what I use for deploying this page after all.
+Nevertheless in this guide I'll go with `now` v1 with a Dockerfile, it's what I use for deploying this page after all.
 It's bit more involved - you'll have to write a Dockerfile - but I think it's a nice learning experience.
 
 Nevertheless if you would rather use a v2 deployment, then go ahead!
@@ -106,7 +106,7 @@ No hard feelings.
 So, you might have heard of Docker but maybe you never used it.
 In a nutshell Docker is a generalized approach to package software with all it's dependencies.
 To do this you write a Dockerfile.
-A Dockerfile is basically a recepy which tells Docker how to package whatever you're trying to package.
+A Dockerfile is basically a recipe which tells Docker how to package whatever you're trying to package.
 <!-- The output of a Dockerfile (which is evaluated with `docker build`) is an *image*. -->
 The output of a Dockerfile (evaluated with `docker build`) is an *image*.
 
@@ -150,9 +150,9 @@ Feel free to use the Dockerfile from above and adjust it to your needs.
 
 With that done we have completed the first step to full automation! 🎉
 
-# now.json
+# `now.json`
 
-How does now know which repositories are relevant?
+How does `now` know which repositories are relevant?
 For that you write a `now.json` file.
 
 <!-- Instead of write lots of words about all the possible combinations you can configure  -->
@@ -170,19 +170,19 @@ Ridiculously small, right?
 
 Let’s go over each property:
 
-- `alias`: you might have guessed it, this is the domain now should alias the deployed version to
-- `name`: the name which appears in your now deployments and web interface, no magic here
-- `type`: what kind of deployment is this? In this case it's `static` because now should just serve the files as they are
-- `version`: what kind of now version do we wanna use?
+- `alias`: you might have guessed it, this is the domain `now` should alias the deployed version to
+- `name`: the name which appears in your `now` deployments and web interface, no magic here
+- `type`: what kind of deployment is this? In this case it's `static` because `now` should just serve the files as they are
+- `version`: what kind of `now` version do we wanna use?
 
-So, how come now knows how to build my page?
-This is a bit of magic on now's side:
+So, how come `now` knows how to build my page?
+This is a bit of magic on `now`'s side:
 <!-- when you have a `static` deployment and a `Dockerfile` now (correctly) assumes that this builds your page. -->
-when you have a `static` deployment and a `Dockerfile` now (correctly) assumes that the image contains your final page.
+when you have a `static` deployment and a `Dockerfile` `now` (correctly) assumes that the image contains your final page.
 The only thing you need to do is put the relevant files in a `/public` folder in your docker image.
 [See here the docs] (https://zeit.co/docs/v1/static-deployments/builds/building-with-now/) for details on this.
 
-All this in combination leads to now basically doing this:
+All this in combination leads to `now` basically doing this:
 
 1. fetch the files from the repo
 2. detect the `Dockerfile`, run `docker build`
@@ -207,7 +207,7 @@ If you then like what you see you can just run:
 $ now alias
 ```
 
-And now will use the `alias` from your `now.json`.
+And `now` will use the `alias` from your `now.json`.
 
 # Push Sesame
 
@@ -215,7 +215,7 @@ And that's it!
 
 You'll only need to push everything onto `master` in the repository created earlier.
 **After that it will work automagically**.
-Now will deploy any changes to `master` and alias it directly.
+`now` will deploy any changes to `master` and alias it directly.
 Other branches will get ignored, so you can safely use them for iterations on your posts.
 
 What are you waiting for?
