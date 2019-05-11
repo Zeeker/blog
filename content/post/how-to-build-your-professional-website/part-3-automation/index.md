@@ -75,32 +75,40 @@ So, you might have heard of Docker but maybe you never used it.
 In a nutshell Docker is a generalized approach to package software with all it's dependencies.
 To do this you write a Dockerfile.
 A Dockerfile is basically a recepy which tells Docker how to package whatever you're trying to package.
-The output of a Dockerfile (which is evaluated with `docker build`) is an *image*.
+<!-- The output of a Dockerfile (which is evaluated with `docker build`) is an *image*. -->
+The output of a Dockerfile (evaluated with `docker build`) is an *image*.
+
 <!-- I obviously can't go into the nitty gritty details on how Docker works here; if you're interested take a look at [this guide][docker-guide]. -->
-I obviously can't go into the nitty gritty details on the terminology here or how Docker works.
+<!-- I obviously can't go into the nitty gritty details on the terminology here or how Docker works. -->
+While I obviously can't go into the nitty gritty details on the terminology here or how Docker works,
 <!-- If you're interested take a look at [this guide][docker-guide]. -->
-If you're interested there are lots of great guides out there explaining it way better than I ever could.
+<!-- If you're interested there are lots of great guides out there explaining it way better than I ever could. -->
+there are lots of great guides out there explaining it way better than I ever could.
 <!-- !!! Add link to guide -->
-[This guide][docker-guide] might be a good starting point.
+<!-- [This guide][docker-guide] might be a good starting point. -->
+If you're interested, [this official guide][docker-guide] is a really good starting point.
 
 For now, all you need to know is this: we create Dockerfile which tells Docker how to build our *image*.
 Let's jump right in and look at the Dockerfile which builds **this page**:
 
 < link to github and Dockerfile here, shortcode? >
 
-Doesn't look **too** scary I hope.
+Doesn't look **too** scary (I hope).
 
 In short, it installs hugo, downloads the theme, builds the page, and then does something ... odd.
-The `FROM scratch` line tells Docker to, well, start the resulting image **from scratch** (with no software preinstalled).
-<!-- !!! Verify -->
-(In Docker-speech this is called a multi-stage build.)
-
-We then copy the built website from the previous image into this "from scratch" image.
-The end result of this is an image which **only contains the built site**.
+<!-- The `FROM scratch` line tells Docker to, well, start the resulting image **from scratch** (with no software preinstalled). -->
+The `FROM scratch` line tells Docker to, well, start the resulting image **from scratch**.
+<!-- We then copy the built website from the previous image into this "from scratch" image. -->
+Into this fresh image we copy the **built website** from the previous steps.
+The end result is an image which **only contains the built site**.
 No hugo installed, no theme downloaded, nothing.
+In Docker-speech this is called a [multi-stage build](https://docs.docker.com/develop/develop-images/multistage-build/).
+
 Why you may ask?
 It makes the image very small since it only contains the files it needs to.
-(Technically you don't need to do this, it's just good practice to safe space.)
+<!-- (Technically you don't need to do this, it's just good practice to safe space.) -->
+While this is not strictly necessary, it is good practice to keep the image small and focused.
+
 
 That's it.
 Feel free to use the Dockerfile from above and adjust it to your needs.
@@ -125,7 +133,7 @@ Configuration options, list relevant config here
 And it works!
 
 [docker]: https://
-[docker-guide]: https://
+[docker-guide]: https://docs.docker.com/get-started/
 [hugo]: https://gohugo.io/
 [now]: https://zeit.co/now
 [github]: http://github.com/
