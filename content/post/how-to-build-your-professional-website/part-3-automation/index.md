@@ -91,7 +91,11 @@ If you're interested, [this official guide][docker-guide] is a really good start
 For now, all you need to know is this: we create Dockerfile which tells Docker how to build our *image*.
 Let's jump right in and look at the Dockerfile which builds **this page**:
 
-< link to github and Dockerfile here, shortcode? >
+{{<
+  github
+    repo="zeeker/blog"
+    file="Dockerfile"
+>}}
 
 Doesn't look **too** scary (I hope).
 
