@@ -42,8 +42,7 @@ Each of these a crucial but distinct part in builing your page:
 
 1. *[build your site using hugo][part-1]*
 2. *[deploy and host your page with now and setup your own domain][part-2]*
-<!-- 3. *[use github and now to automatically deploy everything on push][part-3]* -->
-3. *use github and now to automatically deploy everything on push (coming soon!)*
+3. *[use github and now to automatically deploy everything on push][part-3]*
 
 At the end of this you'll have all the skills necessary to create a website **just like this one**.
 Let's get started, shall we?
@@ -55,3 +54,4 @@ Let's get started, shall we?
 
 [part-1]: {{< ref "part-1-hugo" >}}
 [part-2]: {{< ref "part-2-now" >}}
+[part-3]: {{< ref "part-3-automation" >}}
