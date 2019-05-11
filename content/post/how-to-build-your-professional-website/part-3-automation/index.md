@@ -187,11 +187,12 @@ All this in combination leads to now basically doing this:
 
 1. fetch the files from the repo
 2. detect the `Dockerfile`, run `docker build`
-3. deploy the contents of the `/public` folder
+3. deploy the contents of the image's `/public` folder
 4. alias the deployment to `blog.saschawolf.me`
 
-Bonus: This also works locally!
+Bonus: This also works locally!  
 (It will skip the `alias` step though, so you can test things safely!)
+
 To try it out you can just create your own version of the above `now.json` and simply run:
 
 ```sh
