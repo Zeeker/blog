@@ -143,7 +143,7 @@ Go ahead, play a bit around with the various options in the `config.toml` and se
 I'll wait here for you.
 
 Also checkout [tranquilpeak's user documentation](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md) to see which configuration does what.
-Alternatively you can look at [my configuration on github](https://github.com/Zeeker/blog/blob/post/how-to-build-your-professional-website/config.yml).
+Alternatively you can look at [my configuration on github](https://github.com/sascha-wolf/blog/blob/post/how-to-build-your-professional-website/config.yml).
 
 # Content, content, content
 
@@ -189,8 +189,8 @@ Here you can specify things such as a cover and thumbnail image, the behaviour o
 For details on the configuration I suggest to read the [relevant section in the tranquilpeak docs](https://github.com/kakawait/hugo-tranquilpeak-theme/blob/master/docs/user.md#writing-posts).
 
 <!-- You can now start typing away merrily and check your progress with `hugo server`.
-To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/Zeeker/blog/blob/master/content/post/how-to-build-your-professional-website/index.md) -->
-If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/Zeeker/blog/master/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
+To get an impression how a finished post might look like you can checkout [the markdown for this very post!](https://github.com/sascha-wolf/blog/blob/master/content/post/how-to-build-your-professional-website/index.md) -->
+If you're curious on how a finished post might look like, why not checkout [the markdown for this very post?](https://raw.githubusercontent.com/sascha-wolf/blog/master/content/post/how-to-build-your-professional-website/part-1-hugo/index.md)
 You might see some funny things in here, for example the `{{< raw "{{< figure ... >}}" >}}` stuff.
 Hugo calls these [shortcodes](https://gohugo.io/content-management/shortcodes/) which act as simple snippets for things such as embedding YouTube videos etc.. Apart from this everything else should be pretty straightforward.
 

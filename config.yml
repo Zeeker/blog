@@ -129,7 +129,7 @@ menu:
       identifier: github
       name: Github
       pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
-      url: 'https://github.com/zeeker/'
+      url: 'https://github.com/sascha-wolf/'
     - weight: 200
       identifier: twitter
       name: Twitter

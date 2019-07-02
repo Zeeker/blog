@@ -10,7 +10,7 @@ COPY . /app
 WORKDIR /app
 
 ENV THEME=tranquilpeak
-ENV THEME_REPO=https://github.com/Zeeker/hugo-tranquilpeak-theme.git
+ENV THEME_REPO=https://github.com/sascha-wolf/hugo-tranquilpeak-theme.git
 RUN rm -rf themes/* && \
     git clone --depth=1 ${THEME_REPO} themes/${THEME}
 

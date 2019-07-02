@@ -124,7 +124,7 @@ Let's jump right in and look at the Dockerfile which builds **this page**:
 
 {{<
   github
-    repo="zeeker/blog"
+    repo="sascha-wolf/blog"
     file="Dockerfile"
 >}}
 
@@ -162,7 +162,7 @@ Instead I'll show you the `now.json` for **this page**:
 
 {{<
   github
-    repo="zeeker/blog"
+    repo="sascha-wolf/blog"
     file="now.json"
 >}}
 
