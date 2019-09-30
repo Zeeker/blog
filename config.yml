@@ -157,3 +157,8 @@ menu:
       name: RSS
       pre: <i class="sidebar-button-icon fa fa-lg fa-rss"></i>
       url: /index.xml
+    - weight: 300
+      identifier: buy-me-a-coffee
+      name: Buy me a coffee
+      pre: <i class="sidebar-button-icon fa fa-lg fa-mug-hot"></i>
+      url: https://www.buymeacoffee.com/wolf4earth
