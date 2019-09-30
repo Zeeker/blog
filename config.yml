@@ -123,27 +123,27 @@ menu:
     - weight: 1
       identifier: stackoverflow
       name: StackOverflow
-      pre: <i class="sidebar-button-icon fa fa-lg fa-stack-overflow"></i>
+      pre: <i class="sidebar-button-icon fab fa-lg fa-stack-overflow"></i>
       url: 'https://stackoverflow.com/users/story/2274224'
     - weight: 100
       identifier: github
       name: Github
-      pre: <i class="sidebar-button-icon fa fa-lg fa-github"></i>
+      pre: <i class="sidebar-button-icon fab fa-lg fa-github"></i>
       url: 'https://github.com/sascha-wolf/'
     - weight: 200
       identifier: twitter
       name: Twitter
-      pre: <i class="sidebar-button-icon fa fa-lg fa-twitter"></i>
+      pre: <i class="sidebar-button-icon fab fa-lg fa-twitter"></i>
       url: 'https://twitter.com/wolf4earth/'
     - weight: 300
       identifier: linkedin
       name: LinkedIn
-      pre: <i class="sidebar-button-icon fa fa-lg fa-linkedin"></i>
+      pre: <i class="sidebar-button-icon fab fa-lg fa-linkedin"></i>
       url: 'https://www.linkedin.com/in/swolfdev/'
     - weight: 400
       identifier: xing
       name: Xing
-      pre: <i class="sidebar-button-icon fa fa-lg fa-xing"></i>
+      pre: <i class="sidebar-button-icon fab fa-lg fa-xing"></i>
       url: 'https://www.xing.com/profile/Sascha_Wolf45'
 
   misc:
